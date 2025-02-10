@@ -1,0 +1,46 @@
+февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
+INFO: Начало readAndCompress
+февр. 10, 2025 4:17:48 PM HuffmanCoding buildHuffmanTree
+INFO: Начало buildHuffmanTree
+февр. 10, 2025 4:17:48 PM HuffmanCoding buildHuffmanTree
+INFO: Конец buildHuffmanTree
+февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
+INFO: Начало generateCodes
+февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
+INFO: Конец generateCodes
+февр. 10, 2025 4:17:48 PM HuffmanCoding huffmanEncode
+INFO: Начало huffmanEncode
+февр. 10, 2025 4:17:48 PM HuffmanCoding huffmanEncode
+INFO: Конец huffmanEncode
+февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
+INFO: Начало записи в файл
+февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
+INFO: Конец записи в файл
+февр. 10, 2025 4:18:46 PM HuffmanCoding readAndDecompressToFile
+INFO: Начало readAndDecompressToFile
+февр. 10, 2025 4:18:47 PM HuffmanCoding readAndDecompressToFile
+INFO: Создано encodedData
+февр. 10, 2025 4:18:47 PM HuffmanCoding readAndDecompressToFile
+INFO: Создано huffmanCodes
+февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+INFO: Начало huffmanDecode
+февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+INFO: Конец создания reverseHuffmanCodes
+февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+INFO: Конец создания outputList
+февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+INFO: Конец huffmanDecode
+февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
+INFO: Начало readAndDecompressToFile
+февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
+INFO: Создано encodedData
+февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
+INFO: Создано huffmanCodes
+февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+INFO: Начало huffmanDecode
+февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+INFO: Конец создания reverseHuffmanCodes
+февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+INFO: Конец создания outputList
+февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+INFO: Конец huffmanDecode
