@@ -1,46 +1,294 @@
-февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
-INFO: Начало readAndCompress
-февр. 10, 2025 4:17:48 PM HuffmanCoding buildHuffmanTree
-INFO: Начало buildHuffmanTree
-февр. 10, 2025 4:17:48 PM HuffmanCoding buildHuffmanTree
-INFO: Конец buildHuffmanTree
-февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
-INFO: Начало generateCodes
-февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
-INFO: Конец generateCodes
-февр. 10, 2025 4:17:48 PM HuffmanCoding huffmanEncode
-INFO: Начало huffmanEncode
-февр. 10, 2025 4:17:48 PM HuffmanCoding huffmanEncode
-INFO: Конец huffmanEncode
-февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
-INFO: Начало записи в файл
-февр. 10, 2025 4:17:48 PM HuffmanCoding readAndCompress
-INFO: Конец записи в файл
-февр. 10, 2025 4:18:46 PM HuffmanCoding readAndDecompressToFile
+февр. 16, 2025 8:24:35 PM HuffmanCoding readAndDecompressToFile
 INFO: Начало readAndDecompressToFile
-февр. 10, 2025 4:18:47 PM HuffmanCoding readAndDecompressToFile
-INFO: Создано encodedData
-февр. 10, 2025 4:18:47 PM HuffmanCoding readAndDecompressToFile
-INFO: Создано huffmanCodes
-февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:24:35 PM HuffmanCoding huffmanDecode
 INFO: Начало huffmanDecode
-февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:24:35 PM HuffmanCoding huffmanDecode
 INFO: Конец создания reverseHuffmanCodes
-февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:24:35 PM HuffmanCoding huffmanDecode
 INFO: Конец создания outputList
-февр. 10, 2025 4:18:47 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:24:35 PM HuffmanCoding huffmanDecode
 INFO: Конец huffmanDecode
-февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
+февр. 16, 2025 8:28:22 PM HuffmanCoding readAndDecompressToFile
 INFO: Начало readAndDecompressToFile
-февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
-INFO: Создано encodedData
-февр. 10, 2025 4:19:04 PM HuffmanCoding readAndDecompressToFile
-INFO: Создано huffmanCodes
-февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:28:22 PM HuffmanCoding huffmanDecode
 INFO: Начало huffmanDecode
-февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:28:22 PM HuffmanCoding huffmanDecode
 INFO: Конец создания reverseHuffmanCodes
-февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:28:22 PM HuffmanCoding huffmanDecode
 INFO: Конец создания outputList
-февр. 10, 2025 4:19:04 PM HuffmanCoding huffmanDecode
+февр. 16, 2025 8:28:22 PM HuffmanCoding huffmanDecode
+INFO: Конец huffmanDecode
+февр. 16, 2025 8:28:43 PM HuffmanCoding readAndCompress
+INFO: Начало readAndCompress
+февр. 16, 2025 8:28:43 PM HuffmanCoding buildHuffmanTree
+INFO: Начало buildHuffmanTree
+февр. 16, 2025 8:28:43 PM HuffmanCoding buildHuffmanTree
+INFO: Конец buildHuffmanTree
+февр. 16, 2025 8:28:43 PM HuffmanCoding readAndCompress
+INFO: Начало generateCodes
+февр. 16, 2025 8:28:43 PM HuffmanCoding generateCodes
+INFO: Генерация кода для символа: 49, код: [false]
+февр. 16, 2025 8:28:43 PM HuffmanCoding readAndCompress
+INFO: Конец generateCodes
+февр. 16, 2025 8:28:43 PM HuffmanCoding huffmanEncode
+INFO: Начало huffmanEncode
+февр. 16, 2025 8:28:43 PM HuffmanCoding huffmanEncode
+INFO: Конец huffmanEncode
+февр. 16, 2025 8:28:43 PM HuffmanCoding readAndCompress
+INFO: Начало записи в файл
+февр. 16, 2025 8:28:43 PM HuffmanCoding readAndCompress
+INFO: Конец записи в файл
+февр. 16, 2025 8:28:48 PM HuffmanCoding readAndDecompressToFile
+INFO: Начало readAndDecompressToFile
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Начало huffmanDecode
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Конец создания reverseHuffmanCodes
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Конец создания outputList
+февр. 16, 2025 8:28:48 PM HuffmanCoding huffmanDecode
+INFO: Конец huffmanDecode
+февр. 16, 2025 8:29:53 PM HuffmanCoding readAndCompress
+INFO: Начало readAndCompress
+февр. 16, 2025 8:29:53 PM HuffmanCoding buildHuffmanTree
+INFO: Начало buildHuffmanTree
+февр. 16, 2025 8:29:53 PM HuffmanCoding buildHuffmanTree
+INFO: Конец buildHuffmanTree
+февр. 16, 2025 8:29:53 PM HuffmanCoding readAndCompress
+INFO: Начало generateCodes
+февр. 16, 2025 8:29:53 PM HuffmanCoding generateCodes
+INFO: Генерация кода для символа: 49, код: [false]
+февр. 16, 2025 8:29:53 PM HuffmanCoding readAndCompress
+INFO: Конец generateCodes
+февр. 16, 2025 8:29:53 PM HuffmanCoding huffmanEncode
+INFO: Начало huffmanEncode
+февр. 16, 2025 8:29:53 PM HuffmanCoding huffmanEncode
+INFO: Конец huffmanEncode
+февр. 16, 2025 8:29:53 PM HuffmanCoding readAndCompress
+INFO: Начало записи в файл
+февр. 16, 2025 8:29:53 PM HuffmanCoding readAndCompress
+INFO: Конец записи в файл
+февр. 16, 2025 8:30:58 PM HuffmanCoding readAndDecompressToFile
+INFO: Начало readAndDecompressToFile
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Начало huffmanDecode
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Конец создания reverseHuffmanCodes
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 49 для кода: [false]
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Конец создания outputList
+февр. 16, 2025 8:30:58 PM HuffmanCoding huffmanDecode
+INFO: Конец huffmanDecode
+февр. 16, 2025 8:31:35 PM HuffmanCoding readAndCompress
+INFO: Начало readAndCompress
+февр. 16, 2025 8:31:35 PM HuffmanCoding buildHuffmanTree
+INFO: Начало buildHuffmanTree
+февр. 16, 2025 8:31:35 PM HuffmanCoding buildHuffmanTree
+INFO: Конец buildHuffmanTree
+февр. 16, 2025 8:31:35 PM HuffmanCoding readAndCompress
+INFO: Начало generateCodes
+февр. 16, 2025 8:31:35 PM HuffmanCoding generateCodes
+INFO: Генерация кода для символа: 65, код: [false]
+февр. 16, 2025 8:31:35 PM HuffmanCoding generateCodes
+INFO: Генерация кода для символа: 66, код: [true, false]
+февр. 16, 2025 8:31:35 PM HuffmanCoding generateCodes
+INFO: Генерация кода для символа: 67, код: [true, true]
+февр. 16, 2025 8:31:35 PM HuffmanCoding readAndCompress
+INFO: Конец generateCodes
+февр. 16, 2025 8:31:35 PM HuffmanCoding huffmanEncode
+INFO: Начало huffmanEncode
+февр. 16, 2025 8:31:35 PM HuffmanCoding huffmanEncode
+INFO: Конец huffmanEncode
+февр. 16, 2025 8:31:35 PM HuffmanCoding readAndCompress
+INFO: Начало записи в файл
+февр. 16, 2025 8:31:35 PM HuffmanCoding readAndCompress
+INFO: Конец записи в файл
+февр. 16, 2025 8:32:30 PM HuffmanCoding readAndDecompressToFile
+INFO: Начало readAndDecompressToFile
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Начало huffmanDecode
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Конец создания reverseHuffmanCodes
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 65 для кода: [false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 66 для кода: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 66 для кода: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 66 для кода: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 66 для кода: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: false, текущий код: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 66 для кода: [true, false]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 67 для кода: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 67 для кода: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 67 для кода: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 67 для кода: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Декодирование бита: true, текущий код: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Найден символ: 67 для кода: [true, true]
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
+INFO: Конец создания outputList
+февр. 16, 2025 8:32:30 PM HuffmanCoding huffmanDecode
 INFO: Конец huffmanDecode

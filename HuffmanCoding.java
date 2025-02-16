@@ -3,7 +3,6 @@ import java.util.logging.Logger;
 import java.util.logging.FileHandler;
 import java.util.logging.SimpleFormatter;
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class HuffmanCoding {
@@ -46,7 +45,12 @@ public class HuffmanCoding {
             return;
         }
         if (root.left == null && root.right == null) {
+            // Если код пустой (случай с одним символом), добавляем false
+            if (code.isEmpty()) {
+                code.add(false);
+            }
             huffmanCodes.put(root.value, new ArrayList<>(code));
+            logger.info("Генерация кода для символа: " + root.value + ", код: " + code);
         } else {
             code.add(false);
             generateCodes(root.left, code, huffmanCodes);
@@ -108,8 +112,10 @@ public class HuffmanCoding {
 
         for (Boolean bit : encodedData) {
             currentCode.add(bit);
+            logger.info("Декодирование бита: " + bit + ", текущий код: " + currentCode);
             Byte decodedByte = reverseHuffmanCodes.get(currentCode);
             if (decodedByte != null) {
+                logger.info("Найден символ: " + decodedByte + " для кода: " + currentCode);
                 outputList.add(decodedByte);
                 currentCode.clear();
             }
@@ -137,21 +143,10 @@ public class HuffmanCoding {
             return;
         }
 
-        byte[] fileNameBytes = inputFile.getBytes(StandardCharsets.UTF_8);
-
-        byte[] combinedData = new byte[fileNameBytes.length + data.length];
-
-        System.arraycopy(fileNameBytes, 0, combinedData, 0, fileNameBytes.length);
-
-        System.arraycopy(data, 0, combinedData, fileNameBytes.length, data.length);
-
-        // logger.info("data: " + new String(data));
-
         Map<Byte, Integer> frequencyMap = new HashMap<>();
-        for (byte b : combinedData) {
+        for (byte b : data) {
             frequencyMap.put(b, frequencyMap.getOrDefault(b, 0) + 1);
         }
-        // logger.info("frequencyMap: " + frequencyMap);
 
         Node huffmanTree = buildHuffmanTree(frequencyMap);
 
@@ -159,108 +154,95 @@ public class HuffmanCoding {
         logger.info("Начало generateCodes");
         generateCodes(huffmanTree, new ArrayList<>(), huffmanCodes);
         logger.info("Конец generateCodes");
-        // logger.info("huffmanCodes: " + huffmanCodes);
 
-        List<Boolean> encodedData = huffmanEncode(combinedData, huffmanCodes);
-        // logger.info("encodedData: " + encodedData);
+        List<Boolean> encodedData = huffmanEncode(data, huffmanCodes);
 
         logger.info("Начало записи в файл");
         try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(outputFile))) {
             byte[] byteArray = new byte[(encodedData.size() + 7) / 8];
-            // logger.info("encodedData.size(): " + encodedData.size());
-            // logger.info("byteArray.length: " + byteArray.length);
 
             for (int i = 0; i < encodedData.size(); i++) {
                 if (encodedData.get(i)) {
                     byteArray[i / 8] |= (1 << (7 - (i % 8)));
                 }
             }
-            dos.writeInt(fileNameBytes.length);
-            dos.writeInt(encodedData.size());
-            dos.write(byteArray);
+            dos.writeInt(encodedData.size()); // Записываем длину закодированных данных
+            dos.write(byteArray); // Записываем сами данные
 
+            // Записываем таблицу Huffman-кодов
             for (Map.Entry<Byte, List<Boolean>> entry : huffmanCodes.entrySet()) {
                 List<Boolean> tempCode = entry.getValue();
                 byte[] tempByteArray = new byte[(tempCode.size() + 7) / 8];
-
-                // logger.info("tempCode.size(): " + tempCode.size());
-                // logger.info("tempByteArray.length: " + tempByteArray.length);
 
                 for (int i = 0; i < tempCode.size(); i++) {
                     if (tempCode.get(i)) {
                         tempByteArray[i / 8] |= (1 << (7 - (i % 8)));
                     }
                 }
-                dos.writeByte(entry.getKey());
-                dos.writeByte(tempCode.size());
-                dos.write(tempByteArray);
+                dos.writeByte(entry.getKey()); // Записываем символ
+                dos.writeByte(tempCode.size()); // Записываем длину кода
+                dos.write(tempByteArray); // Записываем сам код
             }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Ошибка при записи в файл: " + e.getMessage(), e);
             return;
         }
         logger.info("Конец записи в файл");
-
     }
 
     public static void readAndDecompressToFile(String inputFile, String outputFile) {
         logger.info("Начало readAndDecompressToFile");
         List<Boolean> encodedData = new ArrayList<>();
         Map<Byte, List<Boolean>> huffmanCodes = new HashMap<>();
-        int fileNameBytesLength;
-        try (DataInputStream dis = new DataInputStream(new FileInputStream(inputFile))) {
-            fileNameBytesLength = dis.readInt();
-            int encodedLength = dis.readInt();
-            byte[] byteArray = new byte[(encodedLength + 7) / 8];
 
-            dis.readFully(byteArray);
-            int count = 0;
+        try (DataInputStream dis = new DataInputStream(new FileInputStream(inputFile))) {
+            int encodedLength = dis.readInt(); // Читаем длину закодированных данных
+            byte[] byteArray = new byte[(encodedLength + 7) / 8];
+            dis.readFully(byteArray); // Читаем сами данные
+
+            // Преобразуем байты в List<Boolean>
             for (byte b : byteArray) {
                 for (int i = 7; i >= 0; i--) {
-                    if (count < encodedLength){
-                        encodedData.add(((b >> i) & 1) == 1);
-                        count ++;
-                    }
+                    encodedData.add(((b >> i) & 1) == 1);
                 }
             }
-            logger.info("Создано encodedData");
+            // Обрезаем лишние биты
+            encodedData = encodedData.subList(0, encodedLength);
 
+            // Читаем таблицу Huffman-кодов
             while (dis.available() > 0) {
-                byte key = dis.readByte();
-                int codeLength = dis.readByte();
+                byte key = dis.readByte(); // Читаем символ
+                int codeLength = dis.readByte(); // Читаем длину кода
                 byte[] tempByteArray = new byte[(codeLength + 7) / 8];
-                dis.readFully(tempByteArray);
+                dis.readFully(tempByteArray); // Читаем сам код
 
+                // Преобразуем байты в List<Boolean>
                 List<Boolean> huffmanCode = new ArrayList<>();
-                count = 0;
                 for (byte b : tempByteArray) {
                     for (int i = 7; i >= 0; i--) {
-                        if (count < codeLength){
-                            huffmanCode.add(((b >> i) & 1) == 1);
-                            count ++;
-                        }
+                        huffmanCode.add(((b >> i) & 1) == 1);
                     }
                 }
-                huffmanCodes.put(key, huffmanCode.subList(0, codeLength));
+                huffmanCode = huffmanCode.subList(0, codeLength); // Обрезаем лишние биты
+                huffmanCodes.put(key, huffmanCode);
             }
-            logger.info("Создано huffmanCodes");
+
+            // Декодируем данные
+            byte[] decodedData = huffmanDecode(encodedData, huffmanCodes);
+
+            // Записываем декодированные данные в файл
+            try (FileOutputStream fos = new FileOutputStream(outputFile)) {
+                fos.write(decodedData);
+            } catch (IOException e) {
+                logger.severe("Ошибка при записи в файл: " + e.getMessage());
+            }
         } catch (IOException e) {
             logger.severe("Ошибка при чтении файла: " + e.getMessage());
             return;
         }
-
-        byte[] decodedData = huffmanDecode(encodedData, huffmanCodes);
-        // logger.info("Раскодированные данные: " + new String(decodedData));
-
-        String fileName = new String(decodedData, 0, fileNameBytesLength, StandardCharsets.UTF_8);
-        try (FileOutputStream fos = new FileOutputStream(fileName)) {
-            fos.write(decodedData, fileNameBytesLength, decodedData.length - fileNameBytesLength);
-        } catch (IOException e) {
-            logger.severe("Ошибка при записи в файл: " + e.getMessage());
-        }
     }
+
     public static void main(String[] args) {
-        // logger.setLevel(Level.SEVERE);
         String inputFile = "input.txt";
         String outputFile = "output.bin";
         boolean decode = false;
@@ -292,7 +274,6 @@ public class HuffmanCoding {
                     break;
             }
         }
-
 
         if (decode) {
             readAndDecompressToFile(inputFile, outputFile);
